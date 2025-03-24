@@ -28,6 +28,7 @@ keybert
 rake-nltk
 gtts
 scikit-learn
+gradio
 fastapi
 uvicorn
 googletrans==4.0.0-rc1
