@@ -216,10 +216,8 @@ def generate_comparison_and_impact(article1, article2, comparison_pipeline):
         comparison_prompt = f"""
         You are a journalist analyzing news coverage. Compare two articles on the same topic.
         Ensure your response is **detailed (80-90 words), unique**, and clearly explains how the coverage differs.
-
         Article 1: {article1[:2500]}
         Article 2: {article2[:2500]}
-
         Provide a **thorough and unique comparison**.
         """
         comparison_text = generate_text(comparison_prompt, comparison_pipeline)
@@ -227,10 +225,8 @@ def generate_comparison_and_impact(article1, article2, comparison_pipeline):
         impact_prompt = f"""
         You are a market analyst. Analyze the **impact** of the different coverage styles in two articles.
         Ensure your response is **detailed (80-90 words), unique**, and explains **public, investor, or business reactions**.
-
         Article 1: {article1[:2500]}
         Article 2: {article2[:2500]}
-
         Provide a **deep and unique impact analysis**.
         """
         impact_text = generate_text(impact_prompt, comparison_pipeline)
@@ -249,20 +245,16 @@ def generate_text(prompt, comparison_pipeline, max_length=300, temperature=0.8):
 
 def generate_sentiment_summary(article1_text, article2_text, article1_sentiment, article2_sentiment, summary_pipeline):
     prompt = f"""Generate a concise market impact summary based on sentiment analysis of these news articles. Follow these steps:
-
 1. Compare sentiment scores: 
   - Article 1 Sentiment: {article1_sentiment} 
   - Article 2 Sentiment: {article2_sentiment}
-
 2. Create final summary that:
   - Starts with overall sentiment trend
   - Mentions specific impactful aspects
   - Predicts likely market consequences
   - Uses cautious language for mixed signals
   - Keeps under 2 sentences
-
 Example Format: "[Company] coverage shows [trend] sentiment. [Specific aspect] and [specific aspect] suggest [predicted impact]."
-
 Now analyze:
 {article1_text[:500]}
 {article2_text[:500]}"""
