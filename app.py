@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from fastapi import FastAPI, Query
 from api import analyze_news
 
