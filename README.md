@@ -38,4 +38,4 @@ source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
 pip install -r requirements.txt
 python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
-echo "SERPAPI_KEY=your_key_here" > .env
+echo "SERPAPI_KEY=dc6c7662159faf1677caf498f9b8a34e2dd38e69ef0dbbb5ef491a42375dc0c5" > .env
