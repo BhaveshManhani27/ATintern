@@ -1,5 +1,4 @@
 import random
-from fastapi import HTTPException
 from googletrans import Translator
 from gtts import gTTS
 from utils import load_models, scrape_google_news, generate_summary, ensemble_sentiment, extract_topics_rake, find_topic_overlap, generate_comparison_and_impact, generate_sentiment_summary
@@ -25,7 +24,7 @@ def analyze_news(company_name: str):
         # Scrape Google News
         articles = scrape_google_news(company_name)
         if not articles:
-            raise HTTPException(status_code=404, detail="No articles found for the given company name.")
+            raise Exception("No articles found for the given company name.")
 
         # Summarize articles
         for article in articles:
@@ -93,4 +92,5 @@ def analyze_news(company_name: str):
         return final_output
 
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        # Re-raise the exception so that the Gradio interface can handle it.
+        raise Exception(str(e))
