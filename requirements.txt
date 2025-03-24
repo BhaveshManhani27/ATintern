@@ -1,3 +1,4 @@
+pydantic<2.0.0
 torch
 requests
 beautifulsoup4
@@ -13,5 +14,4 @@ scikit-learn
 fastapi
 uvicorn
 googletrans==4.0.0-rc1
-gtts
-gradio
+gradio==3.41.2
