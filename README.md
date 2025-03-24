@@ -1,4 +1,3 @@
-# NewsInsight AI 📰✨  
 *AI-Powered News Summarization & Sentiment Analysis Tool*
 
 ## Table of Contents
@@ -12,7 +11,7 @@
 - [Contributing](#contributing-)
 - [License](#license-)
 
-## Features ✨
+## Features 
 - **Automated News Collection**: Scrape latest articles from Google News
 - **Smart Summarization**: Generate concise summaries using FLAN-T5
 - **Sentiment Analysis**: 3-model ensemble (DistilBERT + Flair + VADER)
@@ -20,7 +19,7 @@
 - **Multilingual TTS**: Convert insights to Hindi speech
 - **Comparative Reports**: Analyze coverage differences across sources
 
-## Tech Stack 🛠️
+## Tech Stack 
 | Component | Technology |
 |-----------|------------|
 | Language | Python 3.8+ |
@@ -29,7 +28,7 @@
 | Text Processing | NLTK |
 | Audio | gTTS |
 
-## Installation 🚀
+## Installation 
 ```bash
 git clone https://github.com/yourusername/NewsInsight-AI.git
 cd NewsInsight-AI
