@@ -28,6 +28,6 @@ iface = gr.Interface(
 )
 
 # Launch the Gradio app.
-if _name_ == "_main_":
+if __name__ == "_main_":
     iface.launch()
 
