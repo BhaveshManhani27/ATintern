@@ -13,5 +13,5 @@ gtts
 scikit-learn
 fastapi
 uvicorn
-googletrans==4.0.0-rc1
+deep-translator
 gradio==3.41.2
