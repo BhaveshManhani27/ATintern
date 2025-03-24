@@ -1,0 +1,35 @@
+<<<<<<< HEAD
+torch
+requests
+beautifulsoup4
+nltk
+transformers
+flair
+vaderSentiment
+sentence-transformers
+keybert
+rake-nltk
+gtts
+scikit-learn
+fastapi
+uvicorn
+googletrans==4.0.0-rc1
+gtts
+=======
+torch
+requests
+beautifulsoup4
+nltk
+transformers
+flair
+vaderSentiment
+sentence-transformers
+keybert
+rake-nltk
+gtts
+scikit-learn
+fastapi
+uvicorn
+googletrans==4.0.0-rc1
+gtts
+>>>>>>> 37924f66cc4f27fa0c6c2f1c909690f790c12843

@@ -1,0 +1,42 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Virtual environment
+.env/
+.venv/
+env/
+ENV/
+
+# IDE-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Large files
+*.mp3
+*.mp4
+*.zip
+*.tar.gz
+*.dll
+*.lib
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Output files
+output_speech.mp3
